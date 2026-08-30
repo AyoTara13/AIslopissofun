@@ -15,7 +15,7 @@ h1 {
 }
 
 #coin {
-    width: 250px;
+    width: 50px;
     cursor: pointer;
     transition: transform 0.1s;
 }
