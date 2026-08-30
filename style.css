@@ -1,22 +1,25 @@
 body {
     background: #111;
     color: white;
-    font-family: Arial, MedievalSharp;
+    font-family: Arial, sans-serif;
     text-align: center;
-    padding-top: 100px;
+    padding-top: 50px;
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 45px;
 }
 
-#score {
-    font-size: 80px;
+h2 {
+    font-size: 30px;
 }
 
 #coin {
-    width: 50px;
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
     cursor: pointer;
+    user-select: none;
     transition: transform 0.1s;
 }
 
@@ -26,4 +29,8 @@ h1 {
 
 #coin:active {
     transform: scale(0.9);
+}
+
+p {
+    font-size: 20px;
 }
