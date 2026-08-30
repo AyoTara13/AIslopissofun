@@ -1,4 +1,3 @@
-function sayHello() {
     let score = 0;
 
 const scoreDisplay = document.getElementById("score");
