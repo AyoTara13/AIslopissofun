@@ -14,9 +14,17 @@ h1 {
     font-size: 80px;
 }
 
-button {
-    font-size: 30px;
-    padding: 20px 40px;
+#coin {
+    width: 250px;
     cursor: pointer;
-    border-radius: 15px;
+    transition: transform 0.1s;
+}
+
+#coin:hover {
+    transform: scale(1.05);
+}
+
+#coin:active {
+    transform: scale(0.9);
+}
 }
