@@ -1,9 +1,9 @@
-let score = 0;
+let clicks = 0;
 
-const scoreDisplay = document.getElementById("score");
-const clickButton = document.getElementById("clickButton");
+const coin = document.getElementById("coin");
+const clicksText = document.getElementById("clicks");
 
-clickButton.addEventListener("click", function() {
-    score++;
-    scoreDisplay.textContent = score;
+coin.addEventListener("click", function() {
+    clicks++;
+    clicksText.textContent = clicks;
 });
