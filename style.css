@@ -8,3 +8,30 @@
 #cookie:active {
     transform: scale(0.85);
 }
+#shopButton {
+    margin: 20px;
+    padding: 12px 25px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#shop {
+    margin: 20px auto;
+    padding: 20px;
+    width: 300px;
+    background: #333;
+    border-radius: 10px;
+}
+
+#shop h2 {
+    margin-top: 0;
+}
+
+.skin {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+}
