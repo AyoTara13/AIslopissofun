@@ -5,5 +5,5 @@ cookie.addEventListener("click", function() {
     counter.textContent = "Cookies: " + cookies;
 
     clickSound.currentTime = 0;
-    clickSound.play();
+    clickSound.play("click.mp3");
 });
