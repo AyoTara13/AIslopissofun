@@ -1,36 +1,3 @@
-body {
-    background: #111;
-    color: white;
-    font-family: Arial, sans-serif;
-    text-align: center;
-    padding-top: 50px;
-}
-
-h1 {
-    font-size: 45px;
-}
-
-h2 {
-    font-size: 30px;
-}
-
-#coin {
-    width: 550px;
-    height: 550px;
-    object-fit: contain;
-    cursor: pointer;
-    user-select: none;
-    transition: transform 0.1s;
-}
-
-#coin:hover {
-    transform: scale(1.05);
-}
-
-#coin:active {
-    transform: scale(0.9);
-}
-
-p {
-    font-size: 20px;
+#cookie {
+    width: 400px;
 }
