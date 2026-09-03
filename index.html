@@ -1,18 +1,60 @@
-<html>
+<html lang="en">
 <head>
-    <title>Soco Cex Clicker</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Clicker</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: #222;
+            color: white;
+        }
+
+        h1 {
+            margin-top: 40px;
+        }
+
+        #counter {
+            font-size: 40px;
+            margin: 20px;
+        }
+
+        #cookie {
+            width: 300px;
+            cursor: pointer;
+            user-select: none;
+            transition: transform 0.05s;
+        }
+
+        #cookie:active {
+            transform: scale(0.95);
+        }
+    </style>
 </head>
 
 <body>
 
-    <h1>Soco Cex Clicker!</h1>
+    <h1>Cookie Clicker 🍪</h1>
 
-    <div id="coinDisplay">You Have 0 Soco Cexes.</div>
+    <div id="counter">Cookies: 0</div>
 
-    <img id="coin" src="coin.png">
-    
-    <script src="script.js"></script>
+    <img id="cookie" src="cookie.png" alt="Cookie">
+
+    <script>
+        let cookies = 0;
+
+        const cookie = document.getElementById("cookie");
+        const counter = document.getElementById("counter");
+
+        cookie.addEventListener("click", function() {
+            cookies++;
+            counter.textContent = "Cookies: " + cookies;
+        });
+    </script>
 
 </body>
 </html>
+```
