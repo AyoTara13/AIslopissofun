@@ -45,8 +45,8 @@
     <audio id="clickSound" src="click.mp3"></audio>
 
     <button id="shopButton">🛒 Skin Shop</button>
-
-<div id="shop" style="display: none;">
+    
+    <div id="shop" style="display: none;">
     <h2>Skin Shop</h2>
 
     <button class="skin" data-skin="cookie.png" data-price="0">
@@ -61,17 +61,7 @@
         🍫 Normal Saraza Zex — 500 Cookies
     </button>
 </div>
-    <script>
-        let cookies = 0;
-
-        const cookie = document.getElementById("cookie");
-        const counter = document.getElementById("counter");
-
-        cookie.addEventListener("click", function() {
-            cookies++;
-            counter.textContent = "Soco Cexes: " + cookies;
-        });
-    </script>
+    
 <script src="script.js"></script>
 </body>
 </html>
