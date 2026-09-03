@@ -15,8 +15,8 @@ h2 {
 }
 
 #coin {
-    width: 750px;
-    height: 750px;
+    width: 550px;
+    height: 550px;
     object-fit: contain;
     cursor: pointer;
     user-select: none;
