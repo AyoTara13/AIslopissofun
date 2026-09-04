@@ -40,34 +40,41 @@ shopButton.addEventListener("click", function() {
 // Buy / select skins
 skins.forEach(function(skin) {
 
+    const skinName = skin.dataset.skin;
+    const price = Number(skin.dataset.price);
+
+    // Show OWNED if already purchased
+    if (ownedSkins.includes(skinName)) {
+        skin.textContent = "OWNED";
+    }
+
     skin.addEventListener("click", function() {
 
-        const price = Number(skin.dataset.price);
-        const newSkin = skin.dataset.skin;
+        // Already owned → equip it
+        if (ownedSkins.includes(skinName)) {
 
-        // Already owned?
-        if (ownedSkins.includes(newSkin)) {
-
-            // Just equip it
-            cookie.src = newSkin;
-            currentSkin = newSkin;
+            cookie.src = skinName;
+            currentSkin = skinName;
 
             saveGame();
 
             return;
         }
 
-        // Not owned, so check price
+        // Not owned → try to buy it
         if (cookies >= price) {
 
             cookies -= price;
 
-            ownedSkins.push(newSkin);
+            ownedSkins.push(skinName);
 
-            cookie.src = newSkin;
-            currentSkin = newSkin;
+            cookie.src = skinName;
+            currentSkin = skinName;
 
             counter.textContent = "Cookies: " + cookies;
+
+            // Change button to OWNED
+            skin.textContent = "OWNED";
 
             saveGame();
 
